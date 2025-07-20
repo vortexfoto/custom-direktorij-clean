@@ -1,0 +1,12 @@
+# Seznam ročnih sprememb za zaščito ob posodobitvah
+
+1. Custom Blade predloge se nahajajo v: `resources/views/custom`
+2. Override kontrolerji se nahajajo v: `app/Http/Controllers/Custom`
+3. Posebne rute se definirajo v: `routes/custom/web.php`
+4. V datoteki `routes/web.php` dodan include:
+
+   require base_path('routes/custom/web.php');
+
+Vsaka ročna sprememba naj bo zabeležena spodaj:
+
+[DATUM] Spremenjeno: ...

@@ -1,0 +1,30 @@
+# Laravel standard
+/vendor/
+/node_modules/
+/storage/
+/bootstrap/cache/
+/.env
+.env.*
+*.log
+*.zip
+
+# Composer lock (po želji)
+/composer.lock
+
+# IDE/editor datoteke
+*.sqlite
+.DS_Store
+*.swp
+*.bak
+
+# Custom spremljanje (izjeme)
+!resources/views/custom/**
+!app/Http/Controllers/Custom/**
+!routes/custom/**
+!public/assets/custom/css/**
+!public/assets/custom/js/**
+!docs/custom-changes.txt
+
+# Stripe test ključi v dokumentaciji in SQL dumpih
+vendor/stripe/
+public/assets/install.sql
