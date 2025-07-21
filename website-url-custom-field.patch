@@ -1,0 +1,18 @@
+diff --git a/resources/views/custom/forms/website-url-field.blade.php b/resources/views/custom/forms/website-url-field.blade.php
+new file mode 100644
+index 0000000..d672cdd
+--- /dev/null
++++ b/resources/views/custom/forms/website-url-field.blade.php
+@@
++{{-- Prikaz polja Povezava do spletne strani (custom) --}}
++<div class="form-group mt-3">
++  <label for="website_url"><strong>Povezava do spletne strani</strong></label>
++  <input
++    type="url"
++    name="custom_fields[Povezava do spletne strani]"
++    id="website_url"
++    class="form-control"
++    placeholder="https://primer.si"
++    value="{{ old('custom_fields.Povezava do spletne strani', $custom_fields['Povezava do spletne strani'] ?? '') }}"
++  >
++</div>

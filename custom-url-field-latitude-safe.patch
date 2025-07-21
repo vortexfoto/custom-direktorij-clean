@@ -1,0 +1,8 @@
+--- a/resources/views/frontend/listing/create.blade.php
++++ b/resources/views/frontend/listing/create.blade.php
+@@
++    {{-- CUSTOM polje za povezavo do spletne strani --}}
++    @includeIf('custom.forms.website-url-field')
++
+     <div class="form-group">
+         <label for="latitude">{{ __('Latitude') }}</label>

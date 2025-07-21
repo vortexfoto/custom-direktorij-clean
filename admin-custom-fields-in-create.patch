@@ -1,0 +1,13 @@
+--- a/resources/views/admin/listing/create.blade.php
++++ b/resources/views/admin/listing/create.blade.php
+@@
+         <div class="form-group">
+             <label for="type">Type</label>
+             <select name="type" id="type" class="form-control">
+                 <option value="">-- Izberi tip --</option>
+                 {{-- obstoječe možnosti --}}
+             </select>
+         </div>
++
++        {{-- Custom polja: Povezava do spletne strani ipd. --}}
++        @includeIf('custom.forms.render-custom-fields', ['custom_fields' => $custom_fields ?? []])

@@ -1,0 +1,83 @@
+--- a/resources/views/admin/listing/car/create.blade.php
++++ b/resources/views/admin/listing/car/create.blade.php
+@@
++<div class="form-group mt-3">
++    <label for="website_url">Povezava do spletne strani</label>
++    <input
++        type="url"
++        name="custom_fields[Povezava do spletne strani]"
++        id="website_url"
++        class="form-control"
++        placeholder="https://primer.si"
++        value="{{ old('custom_fields.Povezava do spletne strani', $custom_fields['Povezava do spletne strani'] ?? '') }}">
++</div>
+
+--- a/resources/views/admin/listing/hotel/create.blade.php
++++ b/resources/views/admin/listing/hotel/create.blade.php
+@@
++<div class="form-group mt-3">
++    <label for="website_url">Povezava do spletne strani</label>
++    <input
++        type="url"
++        name="custom_fields[Povezava do spletne strani]"
++        id="website_url"
++        class="form-control"
++        placeholder="https://primer.si"
++        value="{{ old('custom_fields.Povezava do spletne strani', $custom_fields['Povezava do spletne strani'] ?? '') }}">
++</div>
+
+--- a/resources/views/admin/listing/restaurant/create.blade.php
++++ b/resources/views/admin/listing/restaurant/create.blade.php
+@@
++<div class="form-group mt-3">
++    <label for="website_url">Povezava do spletne strani</label>
++    <input
++        type="url"
++        name="custom_fields[Povezava do spletne strani]"
++        id="website_url"
++        class="form-control"
++        placeholder="https://primer.si"
++        value="{{ old('custom_fields.Povezava do spletne strani', $custom_fields['Povezava do spletne strani'] ?? '') }}">
++</div>
+
+--- a/resources/views/admin/listing/beauty/create.blade.php
++++ b/resources/views/admin/listing/beauty/create.blade.php
+@@
++<div class="form-group mt-3">
++    <label for="website_url">Povezava do spletne strani</label>
++    <input
++        type="url"
++        name="custom_fields[Povezava do spletne strani]"
++        id="website_url"
++        class="form-control"
++        placeholder="https://primer.si"
++        value="{{ old('custom_fields.Povezava do spletne strani', $custom_fields['Povezava do spletne strani'] ?? '') }}">
++</div>
+
+--- a/resources/views/admin/listing/spletne-strani/create.blade.php
++++ b/resources/views/admin/listing/spletne-strani/create.blade.php
+@@
++<div class="form-group mt-3">
++    <label for="website_url">Povezava do spletne strani</label>
++    <input
++        type="url"
++        name="custom_fields[Povezava do spletne strani]"
++        id="website_url"
++        class="form-control"
++        placeholder="https://primer.si"
++        value="{{ old('custom_fields.Povezava do spletne strani', $custom_fields['Povezava do spletne strani'] ?? '') }}">
++</div>
+
+--- a/resources/views/custom/category/create.blade.php
++++ b/resources/views/custom/category/create.blade.php
+@@
++<div class="form-group mt-3">
++    <label for="website_url">Povezava do spletne strani</label>
++    <input
++        type="url"
++        name="custom_fields[Povezava do spletne strani]"
++        id="website_url"
++        class="form-control"
++        placeholder="https://primer.si"
++        value="{{ old('custom_fields.Povezava do spletne strani', $custom_fields['Povezava do spletne strani'] ?? '') }}">
++</div>

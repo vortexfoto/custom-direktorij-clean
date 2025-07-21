@@ -1,0 +1,30 @@
+diff --git a/app/Http/Controllers/ListingController.php b/app/Http/Controllers/ListingController.php
+--- a/app/Http/Controllers/ListingController.php
++++ b/app/Http/Controllers/ListingController.php
+@@ public function store(Request $request)
+ {
+     // Obstoječa logika za ustvarjanje listinga ...
+     $listing = Listing::create([
+         // tvoji atributi...
+     ]);
+
++    // Shrani custom polje "Povezava do spletne strani" (če obstaja)
++    if ($request->has('custom_fields')) {
++        foreach ($request->custom_fields as $title => $value) {
++            if (!empty($value)) {
++                DB::table('custom_fields')->insert([
++                    'listing_id' => $listing->id,
++                    'listing_type' => $request->input('listing_type'),
++                    'custom_title' => $title,
++                    'custom_field' => $value,
++                    'custom_type' => 'text',
++                    'created_at' => now(),
++                    'updated_at' => now(),
++                ]);
++            }
++        }
++    }
+
+     // Redirect ali response
+     return redirect()->route('frontend.listing.index')->with('success', 'Listing created!');
+ }

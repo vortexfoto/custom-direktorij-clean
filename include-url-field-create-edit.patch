@@ -1,0 +1,21 @@
+--- a/resources/views/frontend/listing/create.blade.php
++++ b/resources/views/frontend/listing/create.blade.php
+@@
+         <select name="type" class="form-control" id="type">
+             <option value="">{{ __('Select listing type') }}</option>
+             {{-- možnosti --}}
+         </select>
++
++        {{-- Custom: Povezava do spletne strani --}}
++        @includeIf('custom.forms.website-url-field')
+
+--- a/resources/views/frontend/listing/edit.blade.php
++++ b/resources/views/frontend/listing/edit.blade.php
+@@
+         <select name="type" class="form-control" id="type">
+             <option value="">{{ __('Select listing type') }}</option>
+             {{-- možnosti --}}
+         </select>
++
++        {{-- Custom: Povezava do spletne strani --}}
++        @includeIf('custom.forms.website-url-field')

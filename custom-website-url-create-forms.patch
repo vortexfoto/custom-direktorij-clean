@@ -1,0 +1,59 @@
+--- a/resources/views/frontend/listing/create-beauty.blade.php
++++ b/resources/views/frontend/listing/create-beauty.blade.php
+@@
++<div class="form-group mt-3">
++    <label for="custom_website_url">Povezava do spletne strani</label>
++    <input type="url" name="custom_website_url" id="custom_website_url" class="form-control"
++           placeholder="https://primer.si" value="{{ old('custom_website_url') }}">
++    @error('custom_website_url')
++        <small class="text-danger">{{ $message }}</small>
++    @enderror
++</div>
+
+--- a/resources/views/frontend/listing/create-hotel.blade.php
++++ b/resources/views/frontend/listing/create-hotel.blade.php
+@@
++<div class="form-group mt-3">
++    <label for="custom_website_url">Povezava do spletne strani</label>
++    <input type="url" name="custom_website_url" id="custom_website_url" class="form-control"
++           placeholder="https://primer.si" value="{{ old('custom_website_url') }}">
++    @error('custom_website_url')
++        <small class="text-danger">{{ $message }}</small>
++    @enderror
++</div>
+
+--- a/resources/views/frontend/listing/create-car.blade.php
++++ b/resources/views/frontend/listing/create-car.blade.php
+@@
++<div class="form-group mt-3">
++    <label for="custom_website_url">Povezava do spletne strani</label>
++    <input type="url" name="custom_website_url" id="custom_website_url" class="form-control"
++           placeholder="https://primer.si" value="{{ old('custom_website_url') }}">
++    @error('custom_website_url')
++        <small class="text-danger">{{ $message }}</small>
++    @enderror
++</div>
+
+--- a/resources/views/frontend/listing/create-restaurant.blade.php
++++ b/resources/views/frontend/listing/create-restaurant.blade.php
+@@
++<div class="form-group mt-3">
++    <label for="custom_website_url">Povezava do spletne strani</label>
++    <input type="url" name="custom_website_url" id="custom_website_url" class="form-control"
++           placeholder="https://primer.si" value="{{ old('custom_website_url') }}">
++    @error('custom_website_url')
++        <small class="text-danger">{{ $message }}</small>
++    @enderror
++</div>
+
+--- a/resources/views/frontend/listing/create-spletne-strani.blade.php
++++ b/resources/views/frontend/listing/create-spletne-strani.blade.php
+@@
++<div class="form-group mt-3">
++    <label for="custom_website_url">Povezava do spletne strani</label>
++    <input type="url" name="custom_website_url" id="custom_website_url" class="form-control"
++           placeholder="https://primer.si" value="{{ old('custom_website_url') }}">
++    @error('custom_website_url')
++        <small class="text-danger">{{ $message }}</small>
++    @enderror
++</div>

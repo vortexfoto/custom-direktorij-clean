@@ -39,6 +39,19 @@
                     </select>
                 </div>
             </div> 
+{{-- Custom: Povezava do spletne strani --}}
+<div class="form-group mt-3">
+  <label for="website_url">Povezava do spletne strani</label>
+  <input
+    type="url"
+    name="custom_fields[Povezava do spletne strani]"
+    id="website_url"
+    class="form-control"
+    placeholder="https://primer.si"
+    value="{{ old('custom_fields.Povezava do spletne strani', $custom_fields['Povezava do spletne strani'] ?? '') }}"
+  >
+</div>
+
             <div class="col-sm-6">
                 <div class="mb-3">
                     <label for="listing-category" class="form-label ol-form-label"> {{get_phrase('Listing Category')}} </label>

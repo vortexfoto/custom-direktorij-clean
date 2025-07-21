@@ -1,0 +1,20 @@
+diff --git a/resources/views/frontend/listing/create.blade.php b/resources/views/frontend/listing/create.blade.php
+--- a/resources/views/frontend/listing/create.blade.php
++++ b/resources/views/frontend/listing/create.blade.php
+@@
+     <div class="form-group">
+         <label for="type">{{ __('Type') }}</label>
+         <select name="type" class="form-control" id="type">
+             <option value="">{{ __('Select listing type') }}</option>
+             {{-- možnosti --}}
+         </select>
+     </div>
+
++    {{-- CUSTOM polje za povezavo do spletne strani --}}
++    @includeIf('custom.forms.website-url-field')
+
+     <div class="form-group">
+         <label for="latitude">{{ __('Latitude') }}</label>
+         <input type="text" class="form-control" name="latitude" id="latitude"
+                placeholder="{{ __('Enter Latitude code') }}" value="{{ old('latitude') }}">
+     </div>
